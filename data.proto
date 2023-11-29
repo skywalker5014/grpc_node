@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package data;
+
+service Testing {
+    rpc TestCall (RequestOne) returns (ResponseOne) {}
+}
+
+message RequestOne {
+    string name = 1;
+    int32 id = 2;
+}
+
+message ResponseOne {
+    string status = 1;
+}
+
+
+
+// message Employee {
+//     string name = 1;
+//     int32 id = 2;
+// }
+// create employees class consisting of all the created instances of class employee  
+// message Employees {
+//     repeated Employee employees = 1;
+// }
+
